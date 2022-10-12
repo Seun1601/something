@@ -50,13 +50,34 @@
 
 
 // Quadratic equation solver
-var a = Number(prompt("What is a?"));
-var b = Number(prompt("What is b?"));
-var c = Number(prompt("What is c?"));
-var up = ((b**2) - (4*a*c));
-var allUp = math.sqrt(up);
-var down = (2*a);
-var all = allUp/down;
-var ans1 = (-b + allUp)/(down);
-var ans2 = (-b - allUp)/(down);
-alert(ans1 + " and " + ans2);
+// var a = Number(prompt("What is a?"));
+// var b = Number(prompt("What is b?"));
+// var c = Number(prompt("What is c?"));
+// var up = ((b**2) - (4*a*c));
+// var allUp = math.sqrt(up);
+// var down = (2*a);
+// var all = allUp/down;
+// var ans1 = (-b + allUp)/(down);
+// var ans2 = (-b - allUp)/(down);
+// alert(ans1 + " and " + ans2);
+
+// Objects
+let fadairo = {
+    Father : "Adebisi",
+    Mother : "Taiwo",
+    Number: 5,
+    children: ["Seun", "Samson", "Iyanu", "Opeyemi" ],
+    fullName: function(){
+        return `${fadairo.children[0]} Fadairo` ;
+    }
+};
+console.log(fadairo.Father);
+//or
+console.log(fadairo['Father']);
+ 
+console.log(fadairo.fullName());  
+
+//For in loop
+ for (let people in fadairo ){
+    console.log(people);
+ }
