@@ -66,18 +66,29 @@ let fadairo = {
     Father : "Adebisi",
     Mother : "Taiwo",
     Number: 5,
+    Numbe: 7,
+    Numb: 8,
+    Num: 9,
     children: ["Seun", "Samson", "Iyanu", "Opeyemi" ],
     fullName: function(){
         return `${fadairo.children[0]} Fadairo` ;
     }
 };
-console.log(fadairo.Father);
-//or
-console.log(fadairo['Father']);
+// console.log(fadairo.Father);
+// //or
+// console.log(fadairo['Father']);
  
-console.log(fadairo.fullName());  
+// console.log(fadairo.fullName());  
 
 //For in loop
  for (let people in fadairo ){
-    console.log(people);
+    console.log(`${people} : ${fadairo[people]}`);
  }
+
+ console.log(Object.keys(fadairo).length);
+ console.log(Object.keys(fadairo));
+console.log(Object.values(fadairo));
+ // Using a for loop,
+//  for (i=0; i < Object.keys(fadairo).length; i++){
+//     console.log(fadairo.children[0]);
+//  }
